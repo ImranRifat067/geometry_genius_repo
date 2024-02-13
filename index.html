@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom project</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="container m-auto">
+    <header>
+        <div class="navbar bg-sky-200 mb-4">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-xl">daisyUI</a>
+            </div>
+            <div class="flex-none">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Link</a></li>
+                    <li>
+                        <details>
+                            <summary>
+                                Parent
+                            </summary>
+                            <ul class="p-2 bg-base-100 rounded-t-none">
+                                <li><a>Link 1</a></li>
+                                <li><a>Link 2</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- main section add here -->
+    <main class="flex gap-4">
+        <!-- calculation section start here -->
+        <div class="grid grid-cols-3 gap-4 flex-1">
+            <!-- card 1 start -->
+            <div class="card w-96 bg-base-100 shadow-xl border-2">
+                <figure class="px-10 pt-10">
+                    <img src="style/images/triangle.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center ">
+                    <h2 class="card-title">Triangle</h2>
+                    <p>Area (A) = 0.5 x b x h</p>
+                    <div class="flex gap-2">
+                        <!-- input-1 -->
+                        <input id="base" class="bg-slate-200 rounded-md p-2 w-24" placeholder="b"
+                            type="text"><span>cm</span>
+                        <!-- input-2 -->
+                        <input id="height" class="bg-slate-200 rounded-md p-2 w-24" placeholder="h"
+                            type="text"><span>cm</span>
+                    </div>
+                    <p>Area : <span id="area">?</span> cm<sup>2</sup></p>
+                    <div class="card-actions flex ">
+                        <button onclick=" triangleArea()" class="btn btn-primary pr-28 pl-28">Caculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- card 1 ends -->
+
+            <!-- card 2 start -->
+            <div class="card w-96 bg-base-100 shadow-xl border-2">
+                <figure class="px-10 pt-10">
+                    <img src="style/images/triangle.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center ">
+                    <h2 class="card-title">Triangle</h2>
+                    <p>Area (A) = 0.5 x b x h</p>
+                    <div class="flex gap-2">
+                        <!-- input-1 -->
+                        <input id="base" class="bg-slate-200 rounded-md p-2 w-24" placeholder="b"
+                            type="text"><span>cm</span>
+                        <!-- input-2 -->
+                        <input id="height" class="bg-slate-200 rounded-md p-2 w-24" placeholder="h"
+                            type="text"><span>cm</span>
+                    </div>
+                    <p>Area : <span id="area">?</span> cm<sup>2</sup></p>
+                    <div class="card-actions flex ">
+                        <button onclick=" triangleArea()" class="btn btn-primary pr-28 pl-28">Caculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- card 2 ends -->
+            <!-- card 3 start -->
+            <div class="card w-96 bg-base-100 shadow-xl border-2">
+                <figure class="px-10 pt-10">
+                    <img src="style/images/triangle.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center ">
+                    <h2 class="card-title">Triangle</h2>
+                    <p>Area (A) = 0.5 x b x h</p>
+                    <div class="flex gap-2">
+                        <!-- input-1 -->
+                        <input id="base" class="bg-slate-200 rounded-md p-2 w-24" placeholder="b"
+                            type="text"><span>cm</span>
+                        <!-- input-2 -->
+                        <input id="height" class="bg-slate-200 rounded-md p-2 w-24" placeholder="h"
+                            type="text"><span>cm</span>
+                    </div>
+                    <p>Area : <span id="area">?</span> cm<sup>2</sup></p>
+                    <div class="card-actions flex ">
+                        <button onclick=" triangleArea()" class="btn btn-primary pr-28 pl-28">Caculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 ends -->
+            <!-- card 4 start -->
+            <div class="card w-96 bg-base-100 shadow-xl border-2">
+                <figure class="px-10 pt-10">
+                    <img src="style/images/triangle.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center ">
+                    <h2 class="card-title">Triangle</h2>
+                    <p>Area (A) = 0.5 x b x h</p>
+                    <div class="flex gap-2">
+                        <!-- input-1 -->
+                        <input id="base" class="bg-slate-200 rounded-md p-2 w-24" placeholder="b"
+                            type="text"><span>cm</span>
+                        <!-- input-2 -->
+                        <input id="height" class="bg-slate-200 rounded-md p-2 w-24" placeholder="h"
+                            type="text"><span>cm</span>
+                    </div>
+                    <p>Area : <span id="area">?</span> cm<sup>2</sup></p>
+                    <div class="card-actions flex ">
+                        <button onclick=" triangleArea()" class="btn btn-primary pr-28 pl-28">Caculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- card 4 ends -->
+            <!-- card 5 start -->
+            <div class="card w-96 bg-base-100 shadow-xl border-2">
+                <figure class="px-10 pt-10">
+                    <img src="style/images/triangle.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center ">
+                    <h2 class="card-title">Triangle</h2>
+                    <p>Area (A) = 0.5 x b x h</p>
+                    <div class="flex gap-2">
+                        <!-- input-1 -->
+                        <input id="base" class="bg-slate-200 rounded-md p-2 w-24" placeholder="b"
+                            type="text"><span>cm</span>
+                        <!-- input-2 -->
+                        <input id="height" class="bg-slate-200 rounded-md p-2 w-24" placeholder="h"
+                            type="text"><span>cm</span>
+                    </div>
+                    <p>Area : <span id="area">?</span> cm<sup>2</sup></p>
+                    <div class="card-actions flex ">
+                        <button onclick=" triangleArea()" class="btn btn-primary pr-28 pl-28">Caculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- card 5 ends -->
+            <!-- card 6 start -->
+            <div class="card w-96 bg-base-100 shadow-xl border-2">
+                <figure class="px-10 pt-10">
+                    <img src="style/images/triangle.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center ">
+                    <h2 class="card-title">Triangle</h2>
+                    <p>Area (A) = 0.5 x b x h</p>
+                    <div class="flex gap-2">
+                        <!-- input-1 -->
+                        <input id="base" class="bg-slate-200 rounded-md p-2 w-24" placeholder="b"
+                            type="text"><span>cm</span>
+                        <!-- input-2 -->
+                        <input id="height" class="bg-slate-200 rounded-md p-2 w-24" placeholder="h"
+                            type="text"><span>cm</span>
+                    </div>
+                    <p>Area : <span id="area">?</span> cm<sup>2</sup></p>
+                    <div class="card-actions flex ">
+                        <button onclick=" triangleArea()" class="btn btn-primary pr-28 pl-28">Caculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- card 6 ends -->
+        </div>
+        <!-- calculation section start here -->
+        <div class="h-96 w-80 border-2 rounded-lg">
+            <h3 class="text-center mt-4 border-b-2 w-40 m-auto border-gray-700">
+                Calculate Area
+            </h3>
+        </div>
+    </main>
+    <script src="/script/triangle.js"></script>
+</body>
+
+</html>
